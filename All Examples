@@ -1,0 +1,2115 @@
+                
+                   
+               ( JavaScript )
+
+                  CODE-01
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Arrays</h1>
+
+<p id="demo"></p>
+
+<script>
+const cars = ["Saab", "Volvo", "BMW"];
+document.getElementById("demo").innerHTML = cars;
+</script>
+
+</body>
+</html>
+
+                   CODE-02
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Arrays</h1>
+
+<p id="demo"></p>
+
+<script>
+const cars = [
+  "Saab",
+  "Volvo",
+  "BMW"
+];
+document.getElementById("demo").innerHTML = cars;
+</script>
+
+</body>
+</html>
+
+
+                   CODE-03
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Arrays</h1>
+
+<p id="demo"></p>
+
+<script>
+const cars = new Array("Saab", "Volvo", "BMW");
+document.getElementById("demo").innerHTML = cars;
+</script>
+
+</body>
+</html>
+
+                   CODE-04
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Math.PI</h2>
+
+<p>Math.PI returns the ratio of a circle's circumference to its diameter:</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = Math.PI;
+</script>
+
+</body>
+</html>
+
+                    CODE-05
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript if</h2>
+
+<p>Display "Good day!" if the hour is less than 18:00:</p>
+
+<p id="demo">Good Evening!</p>
+
+<script>
+if (new Date().getHours() < 18) {
+  document.getElementById("demo").innerHTML = "Good day!";
+}
+</script>
+
+</body>
+</html>
+
+                    CODE-06
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript switch</h2>
+
+<p id="demo"></p>
+
+<script>
+let day;
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case  6:
+    day = "Saturday";
+}
+document.getElementById("demo").innerHTML = "Today is " + day;
+</script>
+
+</body>
+</html>
+
+                       CODE-07
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript switch</h2>
+
+<p id="demo"></p>
+
+<script>
+let text;
+switch (new Date().getDay()) {
+  case 6:
+    text = "Today is Saturday";
+    break;
+  case 0:
+    text = "Today is Sunday";
+    break;
+  default:
+    text = "Looking forward to the Weekend";
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
+
+                       CODE-08
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript For Loop</h2>
+
+<p id="demo"></p>
+
+<script>
+const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+
+let text = "";
+for (let i = 0; i < cars.length; i++) {
+  text += cars[i] + "<br>";
+}
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
+
+                        CODE-09
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Loops</h2>
+
+<p>A loop with a <b>break</b> statement.</p>
+
+<p id="demo"></p>
+
+<script>
+let text = "";
+for (let i = 0; i < 10; i++) {
+  if (i === 3) { break; }
+  text += "The number is " + i + "<br>";
+}
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
+
+                       CODE-10
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript Sets</h2>
+<p>Create a Set from an Array:</p>
+
+<p id="demo"></p>
+
+<script>
+// Create a Set
+const letters = new Set(["a","b","c"]);
+
+// Display set.size
+document.getElementById("demo").innerHTML = letters.size;
+</script>
+
+</body>
+</html>
+
+                      ( JQuery )
+
+                       CODE-11
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+HTML Code:
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <meta charset="utf-8">
+  <title>Test if jQuery is loaded</title>
+</head>
+<body>
+<p>Click me!</p>
+</body>
+</html>
+
+JavaScript Code :
+
+$("p").bind("click", function(){
+   $( "This is a click Event").appendTo( "body" );
+});
+
+$("p").bind("dblclick", function(){
+   $( "This is a double-click Event"  ).appendTo( "body" );
+});
+
+                        CODE-12
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("p").click(function(){
+    $(this).hide();
+  });
+});
+</script>
+</head>
+<body>
+
+<p>If you click on me, I will disappear.</p>
+<p>Click me away!</p>
+<p>Click me too!</p>
+
+</body>
+</html>
+
+                        CODE-13
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("p").dblclick(function(){
+    $(this).hide();
+  });
+});
+</script>
+</head>
+<body>
+
+<p>If you double-click on me, I will disappear.</p>
+<p>Click me away!</p>
+<p>Click me too!</p>
+
+</body>
+</html>
+
+                        CODE-14
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#p1").mouseenter(function(){
+    alert("You entered p1!");
+  });
+});
+</script>
+</head>
+<body>
+
+<p id="p1">Enter this paragraph.</p>
+
+</body>
+</html>
+
+                        CODE-15
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#p1").mouseup(function(){
+    alert("Mouse up over p1!");
+  });
+});
+</script>
+</head>
+<body>
+
+<p id="p1">This is a paragraph.</p>
+
+</body>
+</html>
+
+                         CODE-16
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("p").click(function(){
+    $(this).hide();
+  });
+});
+</script>
+</head>
+<body>
+
+<p>If you click on me, I will disappear.</p>
+<p>Click me away!</p>
+<p>Click me too!</p>
+
+</body>
+</html>
+
+                         CODE-17
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").toggle();
+  });
+});
+</script>
+</head>
+<body>
+
+<button>Toggle between hiding and showing the paragraphs</button>
+
+<p>This is a paragraph with little content.</p>
+<p>This is another small paragraph.</p>
+
+</body>
+</html>
+
+                          CODE-18
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#div1").fadeIn();
+    $("#div2").fadeIn("slow");
+    $("#div3").fadeIn(3000);
+  });
+});
+</script>
+</head>
+<body>
+
+<p>Demonstrate fadeIn() with different parameters.</p>
+
+<button>Click to fade in boxes</button><br><br>
+
+<div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
+<div id="div2" style="width:80px;height:80px;display:none;background-color:green;"></div><br>
+<div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div>
+
+</body>
+</html>
+
+                          CODE-19
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideDown("slow");
+  });
+});
+</script>
+<style> 
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+</style>
+</head>
+<body>
+ 
+<div id="flip">Click to slide down panel</div>
+<div id="panel">Hello world!</div>
+
+</body>
+</html>
+
+                        CODE-20
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.ancestors * { 
+  display: block;
+  border: 2px solid lightgrey;
+  color: lightgrey;
+  padding: 5px;
+  margin: 15px;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("span").parent().css({"color": "red", "border": "2px solid red"});
+});
+</script>
+</head>
+<body>
+
+<div class="ancestors">
+  <div style="width:500px;">div (great-grandparent)
+    <ul>ul (grandparent)  
+      <li>li (direct parent)
+        <span>span</span>
+      </li>
+    </ul>   
+  </div>
+
+  <div style="width:500px;">div (grandparent)   
+    <p>p (direct parent)
+      <span>span</span>
+    </p> 
+  </div>
+</div>
+
+</body>
+</html>
+
+                      ( Bootstrap )
+
+                         CODE-21
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 5 Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container-fluid p-5 bg-primary text-white text-center">
+  <h1>My First Bootstrap Page</h1>
+  <p>Resize this responsive page to see the effect!</p> 
+</div>
+  
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Column 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Column 2</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Column 3</h3>        
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+                       
+
+                         CODE-22
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  
+<div class="container">
+  <h1>My First Bootstrap Page</h1>
+  <p>This part is inside a .container class.</p>
+  <p>The .container class provides a responsive fixed width container.</p>
+  <p>Resize the browser window to see that the container width will change at different breakpoints.</p>
+</div>
+
+</body>
+</html>
+
+                         CODE-23
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  
+<div class="container-fluid">
+  <h1>My First Bootstrap Page</h1>
+  <p>This part is inside a .container-fluid class.</p>
+  <p>The .container-fluid class provides a full width container, spanning the entire width of the viewport.</p>     
+</div>
+
+</body>
+</html>
+
+                         CODE-24
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  
+<div class="container-fluid mt-3">
+  <h1>Three equal width columns</h1>
+  <p>Note: Try to add a new div with class="col" inside the row class - this will create four equal-width columns.</p>
+  <div class="row">
+    <div class="col p-3 bg-primary text-white">.col</div>
+    <div class="col p-3 bg-dark text-white">.col</div>
+    <div class="col p-3 bg-primary text-white">.col</div>
+  </div>
+</div>
+
+</body>
+</html>
+
+                         CODE-25
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  
+<div class="container-fluid mt-3">
+  <h1>Responsive Columns</h1>
+  <p>Resize the browser window to see the effect.</p>
+  <p>The columns will automatically stack on top of each other when the screen is less than 576px wide.</p>
+  <div class="row">
+    <div class="col-sm-3 p-3 bg-primary text-white">.col</div>
+    <div class="col-sm-3 p-3 bg-dark text-white">.col</div>
+    <div class="col-sm-3 p-3 bg-primary text-white">.col</div>
+    <div class="col-sm-3 p-3 bg-dark text-white">.col</div>
+  </div>
+</div>
+
+</body>
+</html>
+
+                         CODE-26
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+  <p>The font-size of each Bootstrap heading depends on the screen size. Try to resize the browser window to see the effect.</p>
+  <h1>h1 Bootstrap heading</h1>
+  <h2>h2 Bootstrap heading</h2>
+  <h3>h3 Bootstrap heading</h3>
+  <h4>h4 Bootstrap heading</h4>
+  <h5>h5 Bootstrap heading</h5>
+  <h6>h6 Bootstrap heading</h6>
+</div>
+
+</body>
+</html>
+
+                          CODE-27
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+  <h1>Display Headings</h1>
+  <p>Display headings are used to stand out more than normal headings (larger font-size and lighter font-weight):</p>
+  <h1 class="display-1">Display 1</h1>
+  <h1 class="display-2">Display 2</h1>
+  <h1 class="display-3">Display 3</h1>
+  <h1 class="display-4">Display 4</h1>
+  <h1 class="display-5">Display 5</h1>
+  <h1 class="display-6">Display 6</h1>
+</div>
+
+</body>
+</html>
+
+                          CODE-28
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+  <h1>Smaller, Secondary Text</h1>
+  <p>The small element (and the .small class) is used to create a smaller, secondary text in any heading:</p>       
+  <h1>h1 heading <small>secondary text</small></h1>
+  <h2>h2 heading <small>secondary text</small></h2>
+  <h3>h3 heading <small>secondary text</small></h3>
+  <h4>h4 heading <small>secondary text</small></h4>
+  <h5>h5 heading <small>secondary text</small></h5>
+  <h6>h6 heading <small>secondary text</small></h6>
+</div>
+
+</body>
+</html>
+
+                        CODE-29
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+  <h1>Abbreviations</h1>
+  <p>The abbr element is used to mark up an abbreviation or acronym:</p>
+  <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+</div>
+
+</body>
+</html>
+
+                         CODE-30
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+  <h1>Description Lists</h1>    
+  <p>The dl element indicates a description list:</p>
+  <dl>
+    <dt>Coffee</dt>
+    <dd>- black hot drink</dd>
+    <dt>Milk</dt>
+    <dd>- white cold drink</dd>
+  </dl>     
+</div>
+
+</body>
+</html>
+
+                        ( AJAX )
+
+                        CODE-31
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<html>
+   <body>
+      <script language = "javascript" type = "text/javascript">
+         <!-- 
+         //Browser Support Code
+         function ajaxFunction() {
+            var ajaxRequest;  // The variable that makes Ajax possible!
+
+            try {
+               // Opera 8.0+, Firefox, Safari 
+               ajaxRequest = new XMLHttpRequest();
+            } catch (e) {
+
+               // Internet Explorer Browsers
+               try {
+                  ajaxRequest = new ActiveXObject("Msxml2.XMLHTTP");
+               } catch (e) {
+                  
+                  try {
+                     ajaxRequest = new ActiveXObject("Microsoft.XMLHTTP");
+                  } catch (e) {
+
+                     // Something went wrong
+                     alert("Your browser broke!");
+                     return false;
+                  }
+               }
+            }
+         }
+         //-->
+      </script>
+      
+      <form name = 'myForm'>
+         Name: <input type = 'text' name = 'username' /> <br />
+         Time: <input type = 'text' name = 'time' />
+      </form>
+      
+   </body>
+</html>
+
+                          CODE-32
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+var ajaxRequest;  // The variable that makes Ajax possible!
+function ajaxFunction() {
+   try {
+      // Opera 8.0+, Firefox, Safari
+      ajaxRequest = new XMLHttpRequest();
+   } catch (e) {
+   
+      // Internet Explorer Browsers
+      try {
+         ajaxRequest = new ActiveXObject("Msxml2.XMLHTTP");
+      } catch (e) {
+      
+         try {
+            ajaxRequest = new ActiveXObject("Microsoft.XMLHTTP");
+         } catch (e) {
+      
+            // Something went wrong
+            alert("Your browser broke!");
+            return false;
+         }
+      }
+   }
+}
+
+                         CODE-33
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+function validateUserId() {
+   ajaxFunction();
+   
+   // Here processRequest() is the callback function.
+   ajaxRequest.onreadystatechange = processRequest;
+   
+   if (!target) target = document.getElementById("userid");
+   var url = "validate?id = " + escape(target.value);
+   
+   ajaxRequest.open("GET", url, true);
+   ajaxRequest.send(null);
+}
+
+                        CODE-34
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The XMLHttpRequest Object</h1>
+
+<p id="demo">Let AJAX change this text.</p>
+
+<button type="button" onclick="loadDoc()">Change Content</button>
+
+<script>
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "ajax_info.txt", true);
+  xhttp.send();
+}
+</script>
+
+</body>
+</html>
+
+                        CODE-35
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The XMLHttpRequest Object</h1>
+
+<button type="button" onclick="loadDoc()">Request data</button>
+
+<p id="demo"></p>
+
+
+<script>
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "demo_get.asp", true);
+  xhttp.send();
+}
+</script>
+
+</body>
+</html>
+
+                       CODE-36
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The XMLHttpRequest Object</h1>
+
+<button type="button" onclick="loadDoc()">Request data</button>
+
+<p id="demo"></p>
+
+<script>
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "demo_get2.asp?fname=Henry&lname=Ford", true);
+  xhttp.send();
+}
+</script>
+ 
+</body>
+</html>
+
+                       CODE-37
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The XMLHttpRequest Object</h1>
+
+<button type="button" onclick="loadDoc()">Request data</button>
+
+<p id="demo"></p>
+ 
+<script>
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("POST", "demo_post.asp", true);
+  xhttp.send();
+}
+</script>
+
+</body>
+</html>
+
+                      CODE-38
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="demo">
+<h1>The XMLHttpRequest Object</h1>
+<button type="button" onclick="loadDoc()">Change Content</button>
+</div>
+
+<script>
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML =
+      this.responseText;
+    }
+  };
+  xhttp.open("GET", "ajax_info.txt", true);
+  xhttp.send();
+}
+</script>
+
+</body>
+</html>
+
+                          CODE-39
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="demo">
+
+<h1>The XMLHttpRequest Object</h1>
+
+<button type="button"
+onclick="loadDoc('ajax_info.txt', myFunction)">Change Content
+</button>
+</div>
+
+<script>
+function loadDoc(url, cFunction) {
+  var xhttp;
+  xhttp=new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      cFunction(this);
+    }
+  };
+  xhttp.open("GET", url, true);
+  xhttp.send();
+}
+function myFunction(xhttp) {
+  document.getElementById("demo").innerHTML =
+  xhttp.responseText;
+}
+</script>
+</body>
+</html>
+
+                          CODE-40
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The XMLHttpRequest Object</h1>
+
+<h3>Start typing a name in the input field below:</h3>
+
+<form action=""> 
+First name: <input type="text" id="txt1" onkeyup="showHint(this.value)">
+</form>
+
+<p>Suggestions: <span id="txtHint"></span></p> 
+
+<script>
+function showHint(str) {
+  var xhttp;
+  if (str.length == 0) { 
+    document.getElementById("txtHint").innerHTML = "";
+    return;
+  }
+  xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("txtHint").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "gethint.php?q="+str, true);
+  xhttp.send();   
+}
+</script>
+
+</body>
+</html>
+
+                            ( JSON )
+       
+                             CODE-41
+-------------------------------------------------------------
+-------------------------------------------------------------
+                  
+
+{
+    "glossary": {
+        "title": "example glossary",
+		"GlossDiv": {
+            "title": "S",
+			"GlossList": {
+                "GlossEntry": {
+                    "ID": "SGML",
+					"SortAs": "SGML",
+					"GlossTerm": "Standard Generalized Markup Language",
+					"Acronym": "SGML",
+					"Abbrev": "ISO 8879:1986",
+					"GlossDef": {
+                        "para": "A meta-markup language, used to create markup languages such as DocBook.",
+						"GlossSeeAlso": ["GML", "XML"]
+                    },
+					"GlossSee": "markup"
+                }
+            }
+        }
+    }
+}
+
+
+                         CODE-42
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+{"menu": {
+  "id": "file",
+  "value": "File",
+  "popup": {
+    "menuitem": [
+      {"value": "New", "onclick": "CreateNewDoc()"},
+      {"value": "Open", "onclick": "OpenDoc()"},
+      {"value": "Close", "onclick": "CloseDoc()"}
+    ]
+  }
+}}
+
+                        CODE-43
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+{"widget": {
+    "debug": "on",
+    "window": {
+        "title": "Sample Konfabulator Widget",
+        "name": "main_window",
+        "width": 500,
+        "height": 500
+    },
+    "image": { 
+        "src": "Images/Sun.png",
+        "name": "sun1",
+        "hOffset": 250,
+        "vOffset": 250,
+        "alignment": "center"
+    },
+    "text": {
+        "data": "Click Here",
+        "size": 36,
+        "style": "bold",
+        "name": "text1",
+        "hOffset": 250,
+        "vOffset": 100,
+        "alignment": "center",
+        "onMouseUp": "sun1.opacity = (sun1.opacity / 100) * 90;"
+    }
+}}    
+
+                       CODE-44
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+{"web-app": {
+  "servlet": [   
+    {
+      "servlet-name": "cofaxCDS",
+      "servlet-class": "org.cofax.cds.CDSServlet",
+      "init-param": {
+        "configGlossary:installationAt": "Philadelphia, PA",
+        "configGlossary:adminEmail": "ksm@pobox.com",
+        "configGlossary:poweredBy": "Cofax",
+        "configGlossary:poweredByIcon": "/images/cofax.gif",
+        "configGlossary:staticPath": "/content/static",
+        "templateProcessorClass": "org.cofax.WysiwygTemplate",
+        "templateLoaderClass": "org.cofax.FilesTemplateLoader",
+        "templatePath": "templates",
+        "templateOverridePath": "",
+        "defaultListTemplate": "listTemplate.htm",
+        "defaultFileTemplate": "articleTemplate.htm",
+        "useJSP": false,
+        "jspListTemplate": "listTemplate.jsp",
+        "jspFileTemplate": "articleTemplate.jsp",
+        "cachePackageTagsTrack": 200,
+        "cachePackageTagsStore": 200,
+        "cachePackageTagsRefresh": 60,
+        "cacheTemplatesTrack": 100,
+        "cacheTemplatesStore": 50,
+        "cacheTemplatesRefresh": 15,
+        "cachePagesTrack": 200,
+        "cachePagesStore": 100,
+        "cachePagesRefresh": 10,
+        "cachePagesDirtyRead": 10,
+        "searchEngineListTemplate": "forSearchEnginesList.htm",
+        "searchEngineFileTemplate": "forSearchEngines.htm",
+        "searchEngineRobotsDb": "WEB-INF/robots.db",
+        "useDataStore": true,
+        "dataStoreClass": "org.cofax.SqlDataStore",
+        "redirectionClass": "org.cofax.SqlRedirection",
+        "dataStoreName": "cofax",
+        "dataStoreDriver": "com.microsoft.jdbc.sqlserver.SQLServerDriver",
+        "dataStoreUrl": "jdbc:microsoft:sqlserver://LOCALHOST:1433;DatabaseName=goon",
+        "dataStoreUser": "sa",
+        "dataStorePassword": "dataStoreTestQuery",
+        "dataStoreTestQuery": "SET NOCOUNT ON;select test='test';",
+        "dataStoreLogFile": "/usr/local/tomcat/logs/datastore.log",
+        "dataStoreInitConns": 10,
+        "dataStoreMaxConns": 100,
+        "dataStoreConnUsageLimit": 100,
+        "dataStoreLogLevel": "debug",
+        "maxUrlLength": 500}},
+    {
+      "servlet-name": "cofaxEmail",
+      "servlet-class": "org.cofax.cds.EmailServlet",
+      "init-param": {
+      "mailHost": "mail1",
+      "mailHostOverride": "mail2"}},
+    {
+      "servlet-name": "cofaxAdmin",
+      "servlet-class": "org.cofax.cds.AdminServlet"},
+ 
+    {
+      "servlet-name": "fileServlet",
+      "servlet-class": "org.cofax.cds.FileServlet"},
+    {
+      "servlet-name": "cofaxTools",
+      "servlet-class": "org.cofax.cms.CofaxToolsServlet",
+      "init-param": {
+        "templatePath": "toolstemplates/",
+        "log": 1,
+        "logLocation": "/usr/local/tomcat/logs/CofaxTools.log",
+        "logMaxSize": "",
+        "dataLog": 1,
+        "dataLogLocation": "/usr/local/tomcat/logs/dataLog.log",
+        "dataLogMaxSize": "",
+        "removePageCache": "/content/admin/remove?cache=pages&id=",
+        "removeTemplateCache": "/content/admin/remove?cache=templates&id=",
+        "fileTransferFolder": "/usr/local/tomcat/webapps/content/fileTransferFolder",
+        "lookInContext": 1,
+        "adminGroupID": 4,
+        "betaServer": true}}],
+  "servlet-mapping": {
+    "cofaxCDS": "/",
+    "cofaxEmail": "/cofaxutil/aemail/*",
+    "cofaxAdmin": "/admin/*",
+    "fileServlet": "/static/*",
+    "cofaxTools": "/tools/*"},
+ 
+  "taglib": {
+    "taglib-uri": "cofax.tld",
+    "taglib-location": "/WEB-INF/tlds/cofax.tld"}}}
+
+                         CODE-45
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+{"employees":[  
+    {"name":"Shyam", "email":"shyamjaiswal@gmail.com"},  
+    {"name":"Bob", "email":"bob32@gmail.com"},  
+    {"name":"Jai", "email":"jai87@gmail.com"}  
+]}  
+The XML representation of above JSON example is given below.
+
+<employees>  
+    <employee>  
+        <name>Shyam</name>   
+        <email>shyamjaiswal@gmail.com</email>  
+    </employee>  
+    <employee>  
+        <name>Bob</name>   
+        <email>bob32@gmail.com</email>  
+    </employee>  
+    <employee>  
+        <name>Jai</name>   
+        <email>jai87@gmail.com</email>  
+    </employee>  
+</employees>  
+
+                         CODE-46
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+{"menu": {  
+  "id": "file",  
+  "value": "File",  
+  "popup": {  
+    "menuitem": [  
+      {"value": "New", "onclick": "CreateDoc()"},  
+      {"value": "Open", "onclick": "OpenDoc()"},  
+      {"value": "Save", "onclick": "SaveDoc()"}  
+    ]  
+  }  
+}}  
+The XML representation of above JSON example is given below.
+
+<menu id="file" value="File">  
+  <popup>  
+    <menuitem value="New" onclick="CreateDoc()" />  
+    <menuitem value="Open" onclick="OpenDoc()" />  
+    <menuitem value="Save" onclick="SaveDoc()" />  
+  </popup>  
+</menu>  
+
+                       CODE-47
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+{  
+     "firstName": "Sonoo",   
+     "lastName": "Jaiswal",   
+     "age": 27,  
+     "address" : {  
+         "streetAddress": "Plot-6, Mohan Nagar",  
+         "city": "Ghaziabad",  
+         "state": "UP",  
+         "postalCode": "201007"  
+     }  
+ }  
+
+                       CODE-48
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+{"employees":[    
+    {"name":"Ram", "email":"ram@gmail.com", "age":23},    
+    {"name":"Shyam", "email":"shyam23@gmail.com", "age":28},  
+    {"name":"John", "email":"john@gmail.com", "age":33},    
+    {"name":"Bob", "email":"bob32@gmail.com", "age":41}   
+]}  
+
+                       CODE-49
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+{  
+"Company": {  
+"Employee": {  
+"FirstName": "Sonoo",  
+"LastName": "Jaiswal",  
+"ContactNo": "1234567890",  
+"Email": "sonoojaiswal@javatpoint.com",  
+"Address": {  
+"City": "Noida",  
+"State": "Uttar Pradesh",  
+"Zip": "123456"  
+}  
+}  
+}  
+} 
+
+                       CODE-50
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+//db.json  
+  
+  
+"posts": [  
+  { "id": 1, "title": "json-server", "author": "typicode" }  
+],  
+"comments": [  
+  { "id": 1, "body": "some comment", "postId": 1 }  
+],  
+"profile": { "name": "typicode" }  
+
+                       ( XML )
+
+                       CODE-51
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Using the XMLHttpRequest Object</h2>
+
+<div id="demo">
+<button type="button" onclick="loadXMLDoc()">Change Content</button>
+</div>
+
+<script>
+function loadXMLDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML =
+      this.responseText;
+    }
+  };
+  xhttp.open("GET", "xmlhttp_info.txt", true);
+  xhttp.send();
+}
+</script>
+
+</body>
+</html>
+
+                        CODE-52
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var parser, xmlDoc;
+var text = "<bookstore><book>" +
+"<title>Everyday Italian</title>" +
+"<author>Giada De Laurentiis</author>" +
+"<year>2005</year>" +
+"</book></bookstore>";
+
+parser = new DOMParser();
+xmlDoc = parser.parseFromString(text,"text/xml");
+
+document.getElementById("demo").innerHTML =
+xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+</script>
+
+</body>
+</html>
+
+                      CODE-53
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>My CD Collection:</h2>
+
+<button type="button" onclick="loadXMLDoc()">
+Get my CD collection</button>
+
+<p id="demo"></p>
+
+<script>
+function loadXMLDoc() {
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      myFunction(this);
+    }
+  };
+  xmlhttp.open("GET", "cd_catalog.xml", true);
+  xmlhttp.send();
+}
+
+function myFunction(xml) {
+  var x, i, xmlDoc, txt;
+  xmlDoc = xml.responseXML;
+  txt = "";
+  x = xmlDoc.getElementsByTagName("ARTIST");
+  for (i = 0; i< x.length; i++) {
+    txt += x[i].childNodes[0].nodeValue + "<br>";
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+</body>
+</html>
+
+                       CODE-54
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 id="demo">This is a Heading</h1>
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = 'Hello World!'">Click Me!
+</button>
+
+</body>
+</html>
+
+                      CODE-55
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var parser, xmlDoc;
+var text = "<bookstore><book>" +
+"<title>Everyday Italian</title>" +
+"<author>Giada De Laurentiis</author>" +
+"<year>2005</year>" +
+"</book></bookstore>";
+
+parser = new DOMParser();
+xmlDoc = parser.parseFromString(text,"text/xml");
+
+document.getElementById("demo").innerHTML =
+xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+</script>
+
+</body>
+</html>
+
+                      CODE-56
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<?xml version="1.0" encoding="UTF-8"?>
+<breakfast_menu>
+
+<food>
+<name>Belgian Waffles</name>
+<price>$5.95</price>
+<description>Two of our famous Belgian Waffles with plenty of real maple syrup</description>
+<calories>650</calories>
+</food>
+
+<food>
+<name>Strawberry Belgian Waffles</name>
+<price>$7.95</price>
+<description>Light Belgian waffles covered with strawberries and whipped cream</description>
+<calories>900</calories>
+</food>
+
+<food>
+<name>Berry-Berry Belgian Waffles</name>
+<price>$8.95</price>
+<description>Light Belgian waffles covered with an assortment of fresh berries and whipped cream</description>
+<calories>900</calories>
+</food>
+
+<food>
+<name>French Toast</name>
+<price>$4.50</price>
+<description>Thick slices made from our homemade sourdough bread</description>
+<calories>600</calories>
+</food>
+
+<food>
+<name>Homestyle Breakfast</name>
+<price>$6.95</price>
+<description>Two eggs, bacon or sausage, toast, and our ever-popular hash browns</description>
+<calories>950</calories>
+</food>
+
+</breakfast_menu>
+
+                        CODE-57
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<bookstore xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<book title="Harry Potter">
+  <description
+  xlink:type="simple"
+  xlink:href="/images/HPotter.gif"
+  xlink:show="new">
+  As his fifth year at Hogwarts School of Witchcraft and
+  Wizardry approaches, 15-year-old Harry Potter is.......
+  </description>
+</book>
+
+<book title="XQuery Kick Start">
+  <description
+  xlink:type="simple"
+  xlink:href="/images/XQuery.gif"
+  xlink:show="new">
+  XQuery Kick Start delivers a concise introduction
+  to the XQuery standard.......
+  </description>
+</book>
+
+</bookstore>
+
+                       CODE-58
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<dogbreeds>
+
+<dog breed="Rottweiler" id="Rottweiler">
+  <picture url="https://dog.com/rottweiler.gif" />
+  <history>The Rottweiler's ancestors were probably Roman
+  drover dogs.....</history>
+  <temperament>Confident, bold, alert and imposing, the Rottweiler
+  is a popular choice for its ability to protect....</temperament>
+</dog>
+
+<dog breed="FCRetriever" id="FCRetriever">
+  <picture url="https://dog.com/fcretriever.gif" />
+  <history>One of the earliest uses of retrieving dogs was to
+  help fishermen retrieve fish from the water....</history>
+  <temperament>The flat-coated retriever is a sweet, exuberant,
+  lively dog that loves to play and retrieve....</temperament>
+</dog>
+
+</dogbreeds>
+
+                     CODE-59
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE note SYSTEM "Note.dtd">
+<note>
+<to>Tove</to>
+<from>Jani</from>
+<heading>Reminder</heading>
+<body>Don't forget me this weekend!</body>
+</note>
+
+                    CODE-60
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<xs:element name="note">
+
+<xs:complexType>
+  <xs:sequence>
+    <xs:element name="to" type="xs:string"/>
+    <xs:element name="from" type="xs:string"/>
+    <xs:element name="heading" type="xs:string"/>
+    <xs:element name="body" type="xs:string"/>
+  </xs:sequence>
+</xs:complexType>
+
+</xs:element>
+
+                  ( PHP )
+
+                  CODE-61
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+echo "My first PHP script!";
+?> 
+
+</body>
+</html>
+
+                  CODE-62
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<?php
+
+// Output "Hello GeeksforGeeks"
+echo "Hello GeeksforGeeks";
+
+?>
+
+                  CODE-63
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<!DOCTYPE>  
+<html>  
+    <body>  
+        <?php  
+            echo "Hello world using echo </br>";  
+            ECHO "Hello world using ECHO </br>";  
+            EcHo "Hello world using EcHo </br>";  
+        ?>  
+    </body>  
+</html> 
+
+                 CODE-64
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+ECHO "Hello World!<br>";
+echo "Hello World!<br>";
+EcHo "Hello World!<br>";
+?> 
+
+</body>
+</html>
+
+
+                 CODE-65
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+ 
+<?php
+// This is a single-line comment
+
+# This is also a single-line comment
+?>
+ 
+</body>
+</html>
+
+               CODE-66
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+$txt = "Hello world!";
+$x = 5;
+$y = 10.5;
+
+echo $txt;
+echo "<br>";
+echo $x;
+echo "<br>";
+echo $y;
+?>
+
+</body>
+</html>
+
+                CODE-67
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+echo "<h2>PHP is Fun!</h2>";
+echo "Hello world!<br>";
+echo "I'm about to learn PHP!<br>";
+echo "This ", "string ", "was ", "made ", "with multiple parameters.";
+?> 
+
+</body>
+</html>
+
+               CODE-68
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+print "<h2>PHP is Fun!</h2>";
+print "Hello world!<br>";
+print "I'm about to learn PHP!";
+?> 
+
+</body>
+</html>
+
+               CODE-69
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php 
+$x = "Hello world!";
+$y = 'Hello world!';
+
+echo $x;
+echo "<br>"; 
+echo $y;
+?>
+
+</body>
+</html>
+
+
+               CODE-70
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+echo str_word_count("Hello world!");
+?> 
+ 
+</body>
+</html>
+
+                     ( React JS )
+
+                       CODE-71
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+
+    <div id="mydiv"></div>
+
+    <script type="text/babel">
+      function Hello() {
+        return <h1>Hello World!</h1>;
+      }
+      
+      const container = document.getElementById('mydiv');
+      const root = ReactDOM.createRoot(container);
+      root.render(<Hello />)
+    </script>
+
+  </body>
+</html>
+
+                      CODE-72
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+import logo from './logo.svg';
+import './App.css';
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
+}
+
+export default App;
+
+                    CODE-73
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+const myElement = <h1>I Love JSX!</h1>;
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(myElement);
+
+
+                    CODE-74
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+class Car extends React.Component {
+  render() {
+    return <h2>Hi, I am a Car!</h2>;
+  }
+}
+
+const container = document.getElementById('root');
+const root = ReactDOM.createRoot(container);
+root.render(<Car />);
+
+                     CODE-75
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+function Car(props) {
+  return <h2>I am a { props.brand }!</h2>;
+}
+
+function Garage() {
+  return (
+    <>
+	    <h1>Who lives in my garage?</h1>
+	    <Car brand="Ford" />
+    </>
+  );
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Garage />);
+
+                    CODE-76
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+function Car(props) {
+  return <h2>I am a { props.brand }!</h2>;
+}
+
+function Garage() {
+  const carName = "Ford";
+  return (
+    <>
+	    <h1>Who lives in my garage?</h1>
+	    <Car brand={ carName } />
+    </>
+  );
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Garage />);
+
+
+                    CODE-77
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+function Car(props) {
+  return <h2>I am a { props.brand.model }!</h2>;
+}
+
+function Garage() {
+  const carInfo = { name: "Ford", model: "Mustang" };
+  return (
+    <>
+	    <h1>Who lives in my garage?</h1>
+	    <Car brand={ carInfo } />
+    </>
+  );
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Garage />);
+
+                     CODE-78
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+function Football() {
+  const shoot = () => {
+    alert("Great Shot!");
+  }
+
+  return (
+    <button onClick={shoot}>Take the shot!</button>
+  );
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Football />);
+
+                     CODE-79
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+function Football() {
+  const shoot = (a) => {
+    alert(a);
+  }
+
+  return (
+    <button onClick={() => shoot("Goal!")}>Take the shot!</button>
+  );
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Football />);
+
+                    CODE-80
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+function Football() {
+  const shoot = (a, b) => {
+    alert(b.type);
+		/*
+		'b' represents the React event that triggered the function.
+    In this case, the 'click' event
+		*/
+  }
+
+  return (
+    <button onClick={(event) => shoot("Goal!", event)}>Take the shot!</button>
+  );
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Football />);
